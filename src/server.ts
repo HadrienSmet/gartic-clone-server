@@ -14,9 +14,8 @@ const server = http.createServer();
 
 const io = new ServerIO(server, {
     cors: {
-        origin: "https://hs-gartic-clone.netlify.app/",
+        origin: "*",
         methods: ["GET", "POST"],
-        // credentials: true,
     },
     transports: ["polling"],
 });
