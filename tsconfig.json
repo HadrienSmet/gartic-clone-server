@@ -6,6 +6,7 @@
         "rootDir": "./src",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
+        "strict": true,
         "lib": ["es2018", "dom"]
     },
     "include": ["src/**/*"],

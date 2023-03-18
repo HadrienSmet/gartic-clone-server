@@ -1,5 +1,6 @@
 import http from "http";
 import { Server as ServerIO } from "socket.io";
+import { config } from "./config/config";
 
 type Player = {
     pseudo: string;
@@ -84,6 +85,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(3001, () => {
-    console.log("Server listening on 3001");
+server.listen(config.server.port, () => {
+    console.log("Server listening on " + config.server.port);
 });

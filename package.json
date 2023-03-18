@@ -4,8 +4,8 @@
     "description": "",
     "main": "src/server.ts",
     "scripts": {
-        "postinstall": "tsc",
         "start": "node build/server.js",
+        "postinstall": "tsc",
         "dev": "ts-node server.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
