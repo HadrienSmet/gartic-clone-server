@@ -85,5 +85,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3001, () => {
-    console.log("listening on 3001");
+    console.log("Server listening on 3001");
 });
